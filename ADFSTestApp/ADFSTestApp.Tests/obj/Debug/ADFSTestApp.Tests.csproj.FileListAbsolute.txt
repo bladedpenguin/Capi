@@ -1,0 +1,50 @@
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\ADFSTestApp.Tests.dll.config
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\ADFSTestApp.Tests.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\ADFSTestApp.Tests.pdb
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\ADFSTestApp.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\Newtonsoft.Json.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Helpers.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Mvc.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Razor.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Optimization.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\ADFSTestApp.pdb
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\Newtonsoft.Json.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Helpers.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Mvc.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Razor.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Optimization.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\obj\Debug\ADFSTestApp.Tests.csprojResolveAssemblyReference.cache
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\obj\Debug\ADFSTestApp.Tests.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp.Tests\obj\Debug\ADFSTestApp.Tests.pdb
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\ADFSTestApp.Tests.dll.config
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\ADFSTestApp.Tests.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\ADFSTestApp.Tests.pdb
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\ADFSTestApp.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\ADFSTestApp.pdb
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\obj\Debug\ADFSTestApp.Tests.csprojResolveAssemblyReference.cache
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\obj\Debug\ADFSTestApp.Tests.dll
+C:\Users\rgillum\Source\Repos\CapiToys\ADFSTestApp\ADFSTestApp.Tests\obj\Debug\ADFSTestApp.Tests.pdb

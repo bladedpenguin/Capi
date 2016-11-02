@@ -1,0 +1,38 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1462549197648",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "NotPrincipal": {
+                "AWS": [
+                    "arn:aws:iam::719839850793:role/capi-auth",
+                    "arn:aws:iam::719839850793:user/bStees",
+                    "arn:aws:iam::719839850793:user/tRau"
+                ]
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::catalyst-api-secure/*"
+        },
+        {
+            "Sid": "Stmt1462549172496",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::719839850793:role/capi-auth"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::catalyst-api-secure/*"
+		},
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::719839850793:user/bStees",
+                    "arn:aws:iam::719839850793:user/tRau"
+                ]
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::catalyst-api-secure/*"
+		}
+	]
+}

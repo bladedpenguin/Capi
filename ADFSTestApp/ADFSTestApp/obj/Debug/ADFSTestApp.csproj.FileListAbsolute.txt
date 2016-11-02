@@ -1,0 +1,70 @@
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\ADFSTestApp.dll.config
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\ADFSTestApp.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\ADFSTestApp.pdb
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\Antlr3.Runtime.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\EntityFramework.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\EntityFramework.SqlServer.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\Microsoft.Web.Infrastructure.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\Newtonsoft.Json.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.IdentityModel.Tokens.ValidatingIssuerNameRegistry.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.Helpers.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.Mvc.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.Optimization.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.Razor.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.Deployment.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.Razor.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\WebGrease.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.Helpers.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.Mvc.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.Optimization.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.Razor.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.Deployment.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.Razor.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\Antlr3.Runtime.pdb
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\Newtonsoft.Json.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\EntityFramework.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\EntityFramework.SqlServer.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\obj\Debug\ADFSTestApp.csprojResolveAssemblyReference.cache
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\obj\Debug\ADFSTestApp.dll
+c:\users\rgillum\documents\visual studio 2013\Projects\ADFSTestApp\ADFSTestApp\obj\Debug\ADFSTestApp.pdb
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\ADFSTestApp.dll.config
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\ADFSTestApp.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\ADFSTestApp.pdb
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\Antlr3.Runtime.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\EntityFramework.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\EntityFramework.SqlServer.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\Newtonsoft.Json.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.IdentityModel.Tokens.ValidatingIssuerNameRegistry.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.Helpers.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.Mvc.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.Optimization.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.Razor.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\WebGrease.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.Helpers.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.Mvc.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.Optimization.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.Razor.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\Antlr3.Runtime.pdb
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\Newtonsoft.Json.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\EntityFramework.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\EntityFramework.SqlServer.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\obj\Debug\ADFSTestApp.csprojResolveAssemblyReference.cache
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\obj\Debug\ADFSTestApp.dll
+C:\Users\trau\workspace\api.catalyst\ADFSTestApp\ADFSTestApp\obj\Debug\ADFSTestApp.pdb

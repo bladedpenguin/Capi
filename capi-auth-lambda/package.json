@@ -1,0 +1,17 @@
+{
+  "name": "capi-auth-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "capi-auth-lambda.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.3.9",
+    "googleapis": "^5.2.1",
+    "jsonwebtoken": "^6.2.0",
+    "njwt": "^0.2.3"
+  }
+}

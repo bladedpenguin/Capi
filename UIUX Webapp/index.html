@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <!--    <meta name="google-signin-scope" content="profile email ">-->
+
+    <!-- BEGIN Pre-requisites -->
+    <script src="https://apis.google.com/js/client.js"></script>
+<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+<!--    <script src="https://apis.google.com/js/api:client.js"></script>-->
+
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<!--<meta name="google-signin-client_id" content="1027977712243-q8pbbq23nibu9vlqd9p9loietg8t3cuf.apps.googleusercontent.com">-->
+    
+    <!-- END Pre-requisites -->
+
+    <script src="app.js"></script>
+</head>
+
+<body>
+    
+<!--    <div class="g-signin2" data-onsuccess="onSignIn"></div>-->
+    <h1>Welcome to UI/UX</h1>
+    <div id="gsignin" data-scope="https://www.googleapis.com/auth/calendar.readonly" data-clientid="1027977712243-q8pbbq23nibu9vlqd9p9loietg8t3cuf.apps.googleusercontent.com" data-onsuccess="onSignIn" data-onfailure="onSignInFailure">
+    </div>
+    
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+</body>
+
+</html>

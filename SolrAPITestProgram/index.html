@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<head>
+    <title>AWS SOLR Api Functionality Demonstration</title>
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <h1>SOLR AWS Api</h1> First Name:
+        <input type="text" ng-model="firstName">
+        <br> Last Name:
+        <input type="text" ng-model="lastName">
+        <br>
+        <br>
+        <button type=button ng-click="search()">Search</button>
+        <br>
+        <br>
+        <button type=button ng-click="searchAll()">Search for all Active</button>
+        <br>
+        <h5>Name: {{myWelcome.name}}</h5>
+        <h5>availability_date: {{myWelcome.availability_date}}</h5>
+        <h5>billing_rate: {{myWelcome.billing_rate}}</h5>
+        <h5>current_project: {{myWelcome.current_project}}</h5>
+        <h5>currently_available: {{myWelcome.currently_available}}</h5>
+        <h5>dbms: {{myWelcome.dbms}}</h5>
+        <h5>education: {{myWelcome.education}}</h5>
+        <h5>home_office: {{myWelcome.home_office}}</h5>
+        <h5>file_type_submitted: {{myWelcome.file_type_submitted}}</h5>
+        <h5>id: {{myWelcome.id}}</h5>
+        <h5>inactive: {{myWelcome.inactive}}</h5>
+        <h5>job_category: {{myWelcome.job_category}}</h5>
+        <h5>languages_scripting_frameworks: {{myWelcome.languages_scripting_frameworks}}</h5>
+        <h5>last_update: {{myWelcome.last_update}}</h5>
+        <h5>lower_case_email: {{myWelcome.lower_case_email}}</h5>
+        <h5>operating_system_environments_ide: {{myWelcome.operating_system_environments_ide}}</h5>
+        <h5>persistence_testing_frameworks_tools: {{myWelcome.persistence_testing_frameworks_tools}}</h5>
+        <h5>relevant_experience: {{myWelcome.relevant_experience}}</h5>
+        <h5>version_: {{myWelcome.version_}}</h5>
+        <h5>will_relocate: {{myWelcome.will_relocate}}</h5>
+        <h5>will_travel: {{myWelcome.will_travel}}</h5>
+
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope, $http) {
+            $scope.firstName = "First Name";
+            $scope.lastName = "Last Name";
+
+            $scope.search = function () {
+                $scope.fullname = $scope.firstName + ' ' + $scope.lastName;
+
+                $http.get("https://pwvhmzklki.execute-api.us-east-1.amazonaws.com/dev/solr/?q=(and%20name:%27" + $scope.fullname + "%27)")
+                    .then(function (response) {
+                        console.log(response.data.hits.hit[0].fields);
+                        $scope.myWelcome = response.data.hits.hit[0].fields;
+                    });
+            }
+            $scope.searchAll = function () {
+
+                $http.get("https://pwvhmzklki.execute-api.us-east-1.amazonaws.com/dev/solr/?q=(and%20inactive:%20%27false%27)")
+                    .then(function (response) {
+                        alert("Open Console");
+                        console.log(response.data.hits.hit);
+                    });
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>

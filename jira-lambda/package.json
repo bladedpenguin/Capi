@@ -1,0 +1,16 @@
+{
+  "name": "jira-lambda",
+  "version": "1.0.0",
+  "description": "AWS lambda function that returns JIRA info needed by KPI. It needs two header parameters 'queryType' and 'projectKey'. 'queryType' can be one of ['burndownChart', 'defectRate'] 'projectKey' is the key project is given in JIRA. (Capitilized letters next to issue numbers)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.74.0",
+    "request-promise": "^4.1.1"
+  }
+}

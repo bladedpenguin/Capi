@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h3>Values from Identity</h3>
+<div class="row table table-bordered">
+    <div class="col-xs-6 lavender">
+        IsAuthenticated = @ViewBag.ClaimsIdentity.IsAuthenticated
+    </div>
+    <div class="col-xs-6 pink">
+        Name = @ViewBag.ClaimsIdentity.Name
+    </div>
+</div>
+
+<h3>Claims from Claims Identity</h3>
+@foreach (System.Security.Claims.Claim claim in ViewBag.ClaimsIdentity.Claims)
+{
+    <div class="row table table-bordered">
+        <div class="col-xs-12 pink">
+            Claim Type = @claim.Type
+        </div>
+        <div class="col-xs-12 lavender">
+            Claim Value = @claim.Value
+        </div>
+        <div class="col-xs-12 pink">
+            Value Type = @claim.ValueType
+        </div>
+        <div class="col-xs-12 lavender">
+            Issuer Name = @claim.Issuer
+        </div>
+    </div>
+}

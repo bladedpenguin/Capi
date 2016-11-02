@@ -1,0 +1,159 @@
+Configuration Documentation for AWS ECS:
+
+Prerequisite:
+- Create Security Group:
+
+	- Go to EC2 management and select Security Groups from the left side menu
+	- Give it a name, description of your choose, and make sure it is assigned to the VPC you plan to use.
+	- Inbound rules should allow http and ssh from anywhere for the point of setting this up.(Need to research best security practices)
+	- Outbound rules can be left the same 
+
+- Create IAM roles:
+	- By default you should not have rights to create roles because this is bad security practice for catalyst to have with AWS, but seeing you should be a trusted party maybe giving rights would not be so bad but if not, just ask netops for these roles to be created.
+
+	-Need two roles created:
+		-Role1:
+			Role Name: WhateverNameYouDesire-instance-role
+			Policy: AmazonEC2ContainerServiceforEC2Role
+		-Role2:
+			Role Name: WhateverNameYouDesire-service-role
+			Policy: AmazonEC2ContainerServiceRole
+			
+	Note: These roles may already be created depending on where you are launching your ECS from, check to make sure before hand for the roles with those policies attached to them.
+	
+- Permissions needed:
+{
+ "Version": "2012-10-17",
+ "Statement": [
+   {
+     "Effect": "Allow",
+     "Action": [
+	   "autoscaling:*",
+       "cloudtrail:DescribeTrails",
+       "ec2:Describe*",
+       "config:Put*",
+       "config:Get*",
+       "config:List*",
+       "config:Describe*",
+       "cloudtrail:GetTrailStatus",
+       "s3:GetObject",
+	   "iam:AddRoleToInstanceProfile",                                                    
+	   "iam:AttachRolePolicy",
+	   "iam:CreateRole",
+	   "iam:CreateInstanceProfile",
+	   "iam:DeleteInstanceProfile",
+	   "iam:DeleteProfile",
+	   "iam:DetachRolePolicy",
+       "iam:GetAccountAuthorizationDetails",
+       "iam:GetAccountSummary",
+       "iam:GetGroup",
+       "iam:GetGroupPolicy",        
+       "iam:GetPolicy",
+       "iam:GetPolicyVersion",
+       "iam:GetRole",
+       "iam:GetRolePolicy",
+       "iam:GetUser",
+       "iam:GetUserPolicy",
+       "iam:ListAttachedGroupPolicies",
+       "iam:ListAttachedRolePolicies",
+       "iam:ListAttachedUserPolicies",
+       "iam:ListEntitiesForPolicy",
+       "iam:ListGroupPolicies",
+       "iam:ListGroupsForUser",        
+       "iam:ListInstanceProfilesForRole",
+	   "iam:ListPolicies",
+       "iam:ListPolicyVersions",
+       "iam:ListRolePolicies",
+       "iam:ListUserPolicies",
+	   "iam:PutRolePolicy",
+	   "iam:RemoveRoleFromInstanceProfile",
+       "iam:UpdateAssumeRolePolicy"
+     ],
+     "Resource": "*"
+   }
+ ]
+}
+	
+	
+
+Creating Docker Images:
+	- First download Docker, if your computer can support virtualization, than the Docker Quickstart Terminal will work for you. If not, you can use an EC2 from Amazon to run docker on. Follow the short steps from here http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+	
+Configuration for ECS:
+
+- Create a cluster:
+	- First go to EC2 Container Service, select clusters from the left side menu and create your cluster.
+	
+- Create an ELB:
+	- Go to the EC2 console and select load balancers from the left side menu.
+	- Click "Create Load Balancer" at the top of the screen
+	- Give it a name and leave the settings as default (Need to research security practices)
+	- Continue to Configure Security Settings, assign it your security group you created earlier or use a predefined one that has appropriate rules
+	- Continue to Configure Health Check, these can be left default unless you need different settings which than could be api specific.
+	- Continue to Add EC2 Instances, do not add any EC2 instances this will be handled with an Auto Scaling Group.
+	- Go ahead and add the tags you want and create your ELB.
+	
+- Create Auto Scaling Group:
+	- Click "Create Auto Scaling Group" at the top of the page, than "Create Launch Configuration" at the bottom of the page to get started.
+	
+	- When selecting the AMI make sure to go to "AWS Marketplace" on the left hand side and search for 'ecs' and choose the first option "Amazon ECS-Optimized Amazon Linux AMI".
+	- When deciding what types of EC2 instances you may need it all depends on the work load you need, understanding what you will be running on these EC2 instances will make it easier for you.
+	- On the Configure Details, give it a name, give it the IAM role WhateverNameYouDesire-instance-role you created earlier. This is needed so the EC2 instances created from this configuration knows how to assign the EC2 instances to the cluster.
+	- Click the "Advanced Details", inside the 'User data' text box, keep it As text and add
+	
+	#!/bin/bash
+	
+	sudo yum update -y
+	echo ECS_CLUSTER=your-cluster-name > /etc/ecs/ecs.config
+	
+	exactly like that.
+	- Next to "IP Address Type" select "Assign a public IP address to every instance".
+ 	- On Add Storage, this again is configured to what is needed of what is going to be running on the EC2 instances.
+	- On Configure Security Group you can add the security group you created earlier. Review and than Create
+	
+	- It should forward you to "Create Auto Scaling Group", first give it a name
+	- On the group size, this tells the auto scale group how many EC2 instances you want created at start-up. For the purpose of this, just give it 3, but you can choose whatever you want. The network can stay the same or use your custom vpc. Assign it the subnets you wish to use.(This could change once I understand more)
+	- Click Advanced Details and check "Receive traffic from Elastic Load Balancer(s)" and in the text box select your ELB you created earlier.
+	
+	- On Scaling Policies for the time being select "Keep this group at its initial size" this will start the desired number of EC2 instances you declared earlier.(Need to research)
+	- You don't have to worry about notifications they can be setup later on for admin of the AWS console to know what is going on.(Logging capabilites)
+	- Give it the tags you want, Review and than Create
+	
+ To make sure everything is properly setup, wait for the EC2 instances for that Scaling group to start up, and from the EC2 dashboard page, wait for the status to not be initializing any more. Than head over the the EC2 Container Service and on your cluster make sure the "Registered Container Instances" has 3 or the number you choose to give the the ASG. If so you have setup AWS ECS to connect to an ELB.
+ 
+ - Create a Task Definition
+	- Click "Create new Task Definition" and give it a name
+	- Click "Add Container" and give the container a name associated to what docker you are running
+	- The image is going to be "training/webapp:latest" , this is Amazon's test docker 
+	- Maximum memory can be 128, but can change depending on what is being put onto the container
+	- Port mappings, host port 80 and container port 5000
+	- The other settings can be changed if needed be but for sake of getting this running just leave them as is, but just note they are customizable
+	- This can also be configured done by a JSON format, looking online will show examples
+	
+ - Create Service in cluster
+	- Now go to your cluster and because we are essentially setting up a webserver (the test application is a simple html page) we are going to use "Services"
+	- Click the Services tab and click create
+	- Give it the task you defined earlier, along with the cluster you are in, and give it a name
+	- The number of tasks you choose is up to you, but be mindful that it is good to leave 1-2 ec2 instances unused for the purpose of if one of your current EC2's fail or you are going to deploy a revised copy of your task later on you can immediately start the transitioning process to your new revision to the amount of tasks you want to run.
+	- Leave the Minimum health percent and Maximum to the defaults
+	- Click "Configure ELB", add the ELB you created earlier and give it the WhateverNameYouDesire-service-role role for the IAM role, save it
+	
+	-Once saved head to your service you just created and look at the event tab you should see these events in this order:
+		Start of tasks
+		De-registered of the instances
+		Registered of the the instances
+		Service has reached a steady state
+		
+	- If you see this than your tasks have been deployed to your service and are now running in your cluster
+	
+- Create Gateway API
+	- Create a new Gateway API and give it a name
+	- A resource is an endpoint to your api, so for this example use /solr as a resource
+	- Make a get method and paste in the ELB endpoint you have with /solr added to the endpoint
+	- Deploy your API to a dev stage, they can be created from the action drop down when you click deploy API
+	
+	- You API is now created and has an endpoint associated with it.
+Additional Notes:
+	-
+	
+	

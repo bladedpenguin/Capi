@@ -1,0 +1,8 @@
+{
+  "params": {
+    "header": {
+      "projectKey": "CAPI",
+      "queryType": "burndownChart"
+    }
+  }
+}

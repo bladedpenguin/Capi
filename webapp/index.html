@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <!--    <meta name="google-signin-scope" content="profile email ">-->
+
+    <!-- BEGIN Pre-requisites -->
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+
+    <!-- END Pre-requisites -->
+
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <div id="gsignin" data-scope="https://www.googleapis.com/auth/calendar.readonly" data-clientid="55110569297-i3pcih5ml0kras7nlc6pdvb6hfvfje1v.apps.googleusercontent.com" data-redirecturi="postmessage" data-accesstype="offline" data-onsuccess="onSignIn" data-onfailure="onSignInFailure">
+    </div>
+
+    <!--    <div id="queryButton"> get calendar data</div>-->
+    <a href="#" onclick="signOut();">Sign out</a>
+    <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+            });
+        }
+    </script>
+
+    <button id="signToken">Sign Token</button>
+    <div id="signedToken"></div>
+    <button id="verify">Verify Token</button>
+    <div id="verifiedToken"></div>
+    <button id="queryMicroservice">Query Microservice</button>
+    <button id="queryFederation">Query Federation Endpoint</button>
+    <button id="queryMicroserviceInvalid">Query Microservice with invalid Google token</button>
+    <button id="querySolr"> Query Solr </button>
+    <button id="queryTimeline">Query Timeline</button>
+    <button id="authQueryReplicon">Authorised Replicon Query</button>
+    <button id="unauthQueryReplicon">Unauthorised Replicon Query</button>
+    <button id>
+    <div id="microStatus"></div>
+    <div id="microserviceResponse"></div>
+    <div id="content"></div>
+    
+</body>
+
+</html>
